@@ -1,0 +1,149 @@
+header{
+    background-color: #002858;
+    text-align: center;
+    color:  white;
+}
+
+img{
+    margin-top: 5px;
+}
+
+.principal{
+    position: fixed;
+    width: 102%;
+    z-index: 20;
+    margin-top: -156px;
+}
+
+.banner{
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    margin: auto;
+    margin-top: 30px;
+    background-size: 100% 100%;
+    animation: banner 10s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes banner{
+    0%, 30% {
+        background-image: url(https://image.freepik.com/vector-gratis/documentos-solicitud-sello-aprobado-solicitud-aceptada-o-curriculum-formulario-papel-casillas-verificacion-foto-personaje-animado-ilustracion-sobre-fondo-blanco_257455-723.jpg);
+        opacity: 1;
+    }
+
+    31%, 34%{
+        opacity: 0.9;
+    }
+
+    35%, 65%{
+        background-image: url(https://gestiondeltalentohumano2017.files.wordpress.com/2017/11/60046224-hand-holding-approved-job-application-approved-cv-with-stamp-creative-thin-line-flat-design-graphic-stock-vector.jpg?w=1200);
+        opacity: 1;
+    }
+
+    66%, 69%{
+        opacity: 0.9;
+    }
+
+    70%, 100%{
+        background-image: url(https://seguropordiasysemanas-fotos.s3.eu-west-3.amazonaws.com/wp-content/uploads/2021/02/18152228/solicitud-de-empleo-animado.jpg);
+        opacity: 1;
+    }
+
+}
+
+@media only screen and (max-width:1045px){
+    .principal{
+        position: absolute;
+    }
+}
+
+
+@media only screen and (max-width:768px){
+    .principal{
+        position: fixed;
+        margin-top: -186px;
+    }
+
+}
+
+@media only screen and (max-width:425px){
+    .principal{
+        position: relative;
+        margin-top: -300px;
+    }
+
+}
+
+@media only screen and (max-width:375px){
+    .principal{
+        position: relative;
+        margin-top: -305px;
+    }
+
+}
+
+.crear-solicitud{
+    background: rgb(158, 237, 240);
+}
+
+.buscar{
+    margin: 55px 0px;
+    text-align: center;
+}
+
+textarea{
+    resize: none;
+}
+footer{
+    background: #002858;
+    color: white;
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+  }
+  
+  ul li{
+    display: inline;
+    margin: auto;
+  }
+  
+  .logos{
+    margin: auto;
+    width: 50%;
+  }
+  
+  .facebook{
+    padding: 5px 10px;
+    margin: 0px 5px;
+    margin-left: -9px;
+  }
+  
+  .instagram{
+    padding: 5px 10px;
+    margin: 0px 5px;
+  }
+  
+  .youtube{
+    padding: 5px 10px;
+    margin: 0px 5px;
+  }   
+  
+.referencia{
+    margin-top: 20px;
+}
+
+.referencia h3{
+    font-size: 13px;
+    color: white;
+}
+
+.integrantes{
+    margin-top: 20px;
+}
+
+h4{
+    font-size: 13px;
+    text-align: center;
+}
+  

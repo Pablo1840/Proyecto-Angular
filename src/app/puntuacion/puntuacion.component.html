@@ -1,0 +1,96 @@
+<body>
+    <section class="row principal">
+      <header class="col-xs-6 col-sm-5 col-md-4 col-lg-3">
+          <div class="container">
+              <a href="">
+                  <figure>
+                      <img src="https://moodle.unibe.edu.ec/pluginfile.php/1/theme_fordson/headerlogo/1606321651/logoU.png" width="200" heigth="200">
+                  </figure>  
+              </a>       
+          </div>
+      </header>
+      <header class="col-xs-6 col-sm-7 col-md-8 col-lg-9">
+          <div class="container">
+              <h1>Universidad Iberoamericana del Ecuador</h1>
+              <h2>Puntuaciones</h2>
+          </div>
+      </header>
+    </section>
+  
+    <div class="row">
+      <div class="col-8 mx-auto">
+        <h3></h3>
+        <section >     
+          <div class="banner">
+          </div>
+        </section>  
+      </div>
+    </div>
+  
+    <div class="bg-light mt-2 container">  
+      <div class="card" >
+        <div class="card-body">
+          <h3 class="card-titlr buscar">Búsqueda de Puntuaciones</h3>
+          <div class="row">
+            <div class="col">
+              <div class="form-group"> 
+                <input type="text" class="form-control" name="filterPuntuacion" placeholder="Search.." [(ngModel)]="filterPuntuacion">
+              </div>
+            </div>
+          </div>
+          <table class="table table-striped mt-3">
+            <thead>
+              <tr>
+                <th scope="col">Cod Evaluación</th>
+                <th scope="col">Calificación</th>
+                <th scope="col">Calificador</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let puntuacion of puntuaciones | filtro2:filterPuntuacion">
+                <td>{{puntuacion.codigoEvaluacion}}</td>
+                <td>{{puntuacion.calificacion}}</td>
+                <td>{{puntuacion.calificador}}</td>   
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-4" style="margin-top: 20px;">
+          <div class="redes_sociales">
+            <div class="logos">
+              <ul>
+                <li class="facebook">
+                  <i class="fab fa-facebook-f"></i>
+                </li>
+                <li class="instagram">
+                  <i class="fab fa-instagram"></i>
+                </li>
+                <li class="youtube">
+                  <i class="fab fa-youtube"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 text-center">
+          <div class="referencia">
+            <h3>© Universidad Iberoamericana del Ecuador 2021</h3>
+          </div>   
+        </div>
+  
+        <div class="col-xs-12 col-sm-4 col-md-4 text-center">
+          <div class="integrantes">
+            <h4>Página creada por Rommel y Pablo 4to Semestre</h4> 
+          </div>
+        </div>  
+          
+      </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/0e04776b3e.js" crossorigin="anonymous"></script>
+  
+  </body>
+

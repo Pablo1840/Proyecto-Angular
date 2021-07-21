@@ -1,0 +1,36 @@
+nav{
+    margin-top: 100px;
+    z-index: 20;
+}
+
+
+
+@media only screen and (max-width:850px){
+    nav{
+        margin-top: 10px;
+    }
+}
+
+
+@media only screen and (max-width:768px){
+    nav{
+        margin-top: 130px;
+        background: white;
+    }
+}
+
+@media only screen and (max-width:425px){
+    nav{
+        margin-top: 200px;
+        background: white;
+    }
+}
+
+
+@media only screen and (max-width:425px){
+    nav{
+        margin-top: 245px;
+        background: white;
+    }
+}
+

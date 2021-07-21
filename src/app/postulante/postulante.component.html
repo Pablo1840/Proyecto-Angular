@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postulantes</title>
+    
+</head>
+<body>
+    <section class="row principal">
+      <header class="col-xs-6 col-sm-5 col-md-4 col-lg-3">
+          <div class="container">
+              <a href="">
+                  <figure>
+                      <img src="https://moodle.unibe.edu.ec/pluginfile.php/1/theme_fordson/headerlogo/1606321651/logoU.png" width="200" heigth="200">
+                  </figure>  
+              </a>       
+          </div>
+      </header>
+      <header class="col-xs-6 col-sm-7 col-md-8 col-lg-9">
+          <div class="container">
+              <h1>Universidad Iberoamericana del Ecuador</h1>
+              <h2>Postulantes</h2>
+          </div>
+      </header>
+    </section>
+  
+    <div class="row">
+      <div class="col-8 mx-auto">
+        <h3></h3>
+        <section >     
+          <div class="banner">
+          </div>
+        </section>  
+      </div>
+    </div>
+  
+    <div class="bg-light mt-2 col-11 mx-auto">
+        <div class="card" >
+            <div class="card-body">
+              <h3 class="card-title buscar">Búsqueda de Postulantes</h3>
+              <div class="row">
+                <div class="col">
+                  <div class="form-group"> 
+                    <input type="text" class="form-control" name="filtrodePostulanteId" placeholder="Search Ci..." [(ngModel)]="filtrodePostulanteId">
+                  </div>
+                </div>
+              </div>
+              <table class="table table-striped mt-3">
+                <thead>
+                    <tr>
+                        <th scope="col">Cod Postulante</th>
+                        <th scope="col">Certificado Bancario</th>
+                        <th scope="col">Curriculo</th>
+                        <th scope="col">Nombres</th>
+                        <th scope="col">CI</th>
+                        <th scope="col">Titulo</th>
+                        <th scope="col">Opciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let postulante of postulantes | filtro1:filtrodePostulanteId">
+                        <td>{{postulante.codPostulante}}</td>
+                        <td><a href="{{postulante.certificadobanca}}">Mirar Certificado</a></td>
+                        <td><a href="{{postulante.curriculo}}">Mirar Curriculo</a></td>
+                        <td>{{postulante.nombres}}</td>
+                        <td>{{postulante.ci}}</td>
+                        <td><a href="{{postulante.titulo}}">Mirar Titulo</a></td>
+                        <td><button class="btn btn-primary" (click)="updatePostulante(postulante.codPostulante)">Editar</button></td>
+                    </tr>
+                </tbody>
+              </table>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-4" style="margin-top: 20px;">
+          <div class="redes_sociales">
+            <div class="logos">
+              <ul>
+                <li class="facebook">
+                  <i class="fab fa-facebook-f"></i>
+                </li>
+                <li class="instagram">
+                  <i class="fab fa-instagram"></i>
+                </li>
+                <li class="youtube">
+                  <i class="fab fa-youtube"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 text-center">
+          <div class="referencia">
+            <h3>© Universidad Iberoamericana del Ecuador 2021</h3>
+          </div>   
+        </div>
+  
+        <div class="col-xs-12 col-sm-4 col-md-4 text-center">
+          <div class="integrantes">
+            <h4>Página creada por Rommel y Pablo 4to Semestre</h4> 
+          </div>
+        </div>  
+          
+      </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/0e04776b3e.js" crossorigin="anonymous"></script>
+  
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postulantes</title>
+    
+</head>
+<body>
+    <section class="row principal">
+      <header class="col-xs-6 col-sm-5 col-md-4 col-lg-3">
+          <div class="container">
+              <a href="">
+                  <figure>
+                      <img src="https://moodle.unibe.edu.ec/pluginfile.php/1/theme_fordson/headerlogo/1606321651/logoU.png" width="200" heigth="200">
+                  </figure>  
+              </a>       
+          </div>
+      </header>
+      <header class="col-xs-6 col-sm-7 col-md-8 col-lg-9">
+          <div class="container">
+              <h1>Universidad Iberoamericana del Ecuador</h1>
+              <h2>Edición de Postulantes</h2>
+          </div>
+      </header>
+    </section>
+  
+    <main>
+      <div class="contenedor-form bg-light">
+        <form  [formGroup]="form" (ngSubmit)="submit()"  novalidate class="col-8 mx-auto mt-2">
+          <h3 class="text-center">Edición Postulante</h3>
+          <div class="contenedor-imagen">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn-F8J71t3yob9_Txg0G18HNxtYz5Wx_aSho2cuOnHG1SPHGBQhCKpoFA2HB1GuK7-Qx0&usqp=CAU" class="imagen">
+          </div>
+          <div class="form-group col-10 mx-auto">
+            <label>Certificado Bancario</label>
+            <input [(ngModel)]="postulante.certificadobanca" type="text" formControlName="certificadobanca" class="form-control">
+          </div>
+          <div class="form-group col-10 mx-auto">
+            <label>Curriculo</label>
+            <input [(ngModel)]="postulante.curriculo" type="text"formControlName="curriculo" class="form-control">
+          </div>
+          <div class="form-group col-10 mx-auto">
+            <label>Nombres</label>
+            <input [(ngModel)]="postulante.nombres" type="text"  formControlName="nombres" class="form-control">
+          </div>
+          <div class="form-group col-10 mx-auto">
+            <label>Nº Cédula</label>
+            <input [(ngModel)]="postulante.ci" type="text"  formControlName="ci" class="form-control">
+          </div>
+          <div class="form-group col-10 mx-auto">
+            <label>Titulo</label>
+            <input [(ngModel)]="postulante.titulo" type="text"  formControlName="titulo" class="form-control">
+          </div>
+          <div class="row contenedor-boton col-5 mx-auto">
+            <button class="btn btn-success mt-2 btn-editar mx-auto" type="submit" name="submit" [disabled]="form.invalid" onclick="alert('El empleado fue editado')">Guardar</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+
+    <footer>
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-4" style="margin-top: 20px;">
+          <div class="redes_sociales">
+            <div class="logos">
+              <ul>
+                <li class="facebook">
+                  <i class="fab fa-facebook-f"></i>
+                </li>
+                <li class="instagram">
+                  <i class="fab fa-instagram"></i>
+                </li>
+                <li class="youtube">
+                  <i class="fab fa-youtube"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 text-center">
+          <div class="referencia">
+            <h3>© Universidad Iberoamericana del Ecuador 2021</h3>
+          </div>   
+        </div>
+  
+        <div class="col-xs-12 col-sm-4 col-md-4 text-center">
+          <div class="integrantes">
+            <h4>Página creada por Rommel y Pablo 4to Semestre</h4> 
+          </div>
+        </div>  
+          
+      </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/0e04776b3e.js" crossorigin="anonymous"></script>
+  
+</body>
+</html>

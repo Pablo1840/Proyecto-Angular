@@ -1,0 +1,168 @@
+header{
+    background-color: #002858;
+    text-align: center;
+    color:  white;
+}
+
+.principal{
+    position: fixed;
+    width: 102%;
+    z-index: 20;
+    margin-top: -110px;
+}
+
+nav{
+    margin-top: 110px;
+}
+
+.contenido_principal{
+    background: rgb(230, 228, 228); //rgb(209, 209, 209)
+}
+
+@media only screen and (max-width:1045px){
+    .principal{
+        position: absolute;
+    }
+}
+
+
+@media only screen and (max-width:850px){
+    .principal{
+        position: relative;
+        margin-top: 1px;
+    }
+
+    nav{
+        margin-top: 10px;
+    }
+}
+
+
+@media only screen and (max-width:770px){
+    .principal{
+        position: relative;
+    }
+
+    nav{
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width:557px){
+    .principal{
+        position: relative;
+    }
+
+    nav{
+        margin-top: 10px;
+    }
+}
+
+.contenido{
+    margin-top: auto;
+}
+
+.banner{
+    width: 100%;
+    height: 70%;
+    min-height: 400px;
+    margin-top: -8px;
+    background-size: 100% 100%;
+    animation: banner 10s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes banner{
+    0%, 30% {
+        background-image: url( https://www.ceupe.com/images/easyblog_articles/368/b2ap3_large_En-qu-consiste-el-proceso-de-reclutamiento.png);
+        opacity: 1;
+    }
+
+    31%, 34%{
+        opacity: 0.9;
+    }
+
+    35%, 65%{
+        background-image: url(https://image.slidesharecdn.com/reclutamientodepersonal-190226150924/95/reclutamiento-de-personal-1-638.jpg?cb=1551193805);
+        opacity: 1;
+    }
+
+    66%, 69%{
+        opacity: 0.9;
+    }
+
+    70%, 100%{
+        background-image: url(https://www.game-learn.com/wp-content/uploads/2020/02/novedades3.jpg);
+        opacity: 1;
+    }
+
+}
+
+.informacion{
+    background-color: rgba(221, 220, 220, 0.603);
+    margin: 30px;
+    text-align: center;
+}
+
+.card{
+    width: 21rem;
+    height: 23rem;
+}
+
+.imagen{
+    width: 230px;
+    height: 180px;
+    margin: auto;
+    margin-top: 5px;
+}
+
+footer{
+    background: #002858;
+    color: white;
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+ul li{
+    display: inline;
+    margin: auto;
+}
+
+.logos{
+    margin: auto;
+    width: 50%;
+}
+
+.facebook{
+    padding: 5px 10px;
+    margin: 0px 5px;
+    margin-left: -9px;
+}
+
+.instagram{
+    padding: 5px 10px;
+    margin: 0px 5px;
+}
+
+.youtube{
+    padding: 5px 10px;
+    margin: 0px 5px;
+}   
+
+.referencia{
+    margin-top: 20px;
+}
+
+.referencia h3{
+    font-size: 13px;
+}
+
+.integrantes{
+    margin-top: 20px;
+}
+
+h4{
+    font-size: 13px;
+    text-align: center;
+}

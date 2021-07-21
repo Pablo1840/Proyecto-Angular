@@ -1,0 +1,168 @@
+header{
+    background-color: #002858;
+    text-align: center;
+    color:  white;
+}
+
+img{
+    margin-top: 5px;
+}
+
+.principal{
+    position: fixed;
+    width: 102%;
+    z-index: 20;
+    margin-top: -156px;
+}
+
+
+@media only screen and (max-width:1045px){
+    .principal{
+        position: absolute;
+    }
+}
+
+
+@media only screen and (max-width:768px){
+    .principal{
+        position: fixed;
+        margin-top: -186px;
+    }
+
+}
+
+@media only screen and (max-width:425px){
+    .principal{
+        position: relative;
+        margin-top: -300px;
+    }
+
+}
+
+@media only screen and (max-width:375px){
+    .principal{
+        position: relative;
+        margin-top: -305px;
+    }
+
+}
+
+.banner{
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    margin: auto;
+    background-size: 100% 100%;
+    animation: banner 10s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes banner{
+    0%, 30% {
+        background-image: url( https://www.enp.edu.uy/media/k2/items/cache/d72b92e7a132ff40fb2049dc48920977_L.jpg);
+        opacity: 1;
+    }
+
+    31%, 34%{
+        opacity: 0.9;
+    }
+
+    35%, 65%{
+        background-image: url(https://www.mineducacion.gov.co/1759/articles-363149_recurso_1.jpg);
+        opacity: 1;
+    }
+
+    66%, 69%{
+        opacity: 0.9;
+    }
+
+    70%, 100%{
+        background-image: url(https://edteam-media.s3.amazonaws.com/blogs/original/24f2fb91-983a-4af0-a7b1-28cdd329c768.jpg);
+        opacity: 1;
+    }
+
+}
+
+.informacion{
+    text-align: center;
+    font-size: 23px;
+    background-color: #e6ffee;
+    margin: 30px 0px;
+}
+
+.p_introductorio{
+    padding: 8px;
+    margin-top: 20px;
+    background: white;
+    border-radius: 10px;
+    margin-top: 24px;
+}
+
+.video_ex{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    min-height: 280px;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.informacion{
+    background-color: rgba(221, 220, 220, 0.603);
+    margin: 30px;
+    text-align: center;
+}
+
+footer{
+    background: #002858;
+    color: white;
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+ul li{
+    display: inline;
+    margin: auto;
+}
+
+.logos{
+    margin: auto;
+    width: 50%;
+}
+
+.facebook{
+    padding: 5px 10px;
+    margin: 0px 5px;
+    margin-left: -9px;
+}
+
+.instagram{
+    padding: 5px 10px;
+    margin: 0px 5px;
+}
+
+.youtube{
+    padding: 5px 10px;
+    margin: 0px 5px;
+}   
+
+.referencia{
+    margin-top: 20px;
+}
+
+.referencia h3{
+    font-size: 13px;
+}
+
+.integrantes{
+    margin-top: 20px;
+}
+
+h4{
+    font-size: 13px;
+    text-align: center;
+}
